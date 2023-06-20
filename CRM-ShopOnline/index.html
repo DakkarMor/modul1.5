@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Модуль 1 Урок 5</title>
+    </head>
+    <body>
+        <h1>Добавить товар</h1>
+        <form action="https://jsonplaceholder.typicode.com/posts" method="post">
+            <fieldset>
+                <label>
+                    Наименование
+                    <input type="text" name="naim">
+                </label>
+                <br>
+                <label>
+                    Категоря
+                    <input type="text" name="category">
+                </label>
+                <br>
+                <label>
+                    Единицфы измерения
+                    <input type="text" name="units">
+                </label>
+                <br>
+                <label>
+                    Дисконт
+                    <input type="checkbox">
+                    <input type="text" readonly>
+                </label>
+                <br>
+                <label>
+                    Описание
+                    <textarea name="description"></textarea>
+                </label>
+                <br>
+                <label>
+                    Количество
+                    <input type="number" name="quantity">
+                </label>
+                <br>
+                <label>
+                    Цена
+                    <input type="number" name="price">
+                </label>
+                <br>
+                <input type="file">
+            </fieldset>
+            <button type="submit">Добавить товар</button>
+
+        </form>
+    </body>
+</html>
