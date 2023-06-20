@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Модуль 1 Урок 5</title>
+    <link rel="icon" type="image/svg+xml" href="img/icon.svg">
+  </head>
+  <body>
+
+    <img src="img/logo.svg" alt="логотип">
+
+    <h1>Меню</h1>
+    <ul>
+      <li><a href="#room">Залы</a></li>
+      <li><a href="#description">О нас</a></li>
+      <li><a href="#booking">Бронь</a></li>
+      <li><a href="#reviews">Отзывы</a></li>
+      <li><a href="#contacts">Контакты</a></li>
+    </ul>
+
+    <h2 id="booking">У нас есть все для классного отдыха с друзьями</h2>
+    <ul>
+      <li>
+        <figure>
+          <img src="img/vr.jpg" alt="VR очки" height="228">
+          <figcaption>VR очки</figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="img/audio.jpg" alt="Аудио-система" height="228">
+          <figcaption>Аудио-система 5.1 с отличным звуком</figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="img/micro.jpg" alt="Караоке" height="228">
+          <figcaption>Караоке (4 микрофона)</figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="img/game.jpg" alt="Настольные игры" height="228">
+          <figcaption>Настольные игры</figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="img/netflix.jpg" alt="Киносервис Netflix" height="228">
+          <figcaption>Киносервисы Netflix, IVI, MegoGo, Кинопоиск, Okko</figcaption>
+        </figure>
+      </li>
+      <li>
+        <figure>
+          <img src="img/sony.jpg" alt="Play Station 5" height="228">
+          <figcaption>Play Station 5</figcaption>
+        </figure>
+      </li>
+    </ul>
+
+    <h2 id="room">Наши залы</h2>
+    <ol>
+      <li><a href="vibes.htm">80's vibes</a></li>
+      <li><a href="starwars.html">Star wars</a></li>
+      <li><a href="wildwest.html">Wild west</a></li>
+      <li><a href="neon.html">Neon style</a></li>
+    </ol>
+
+    <h2>Забронировать</h2>
+    <form action="https://jsonplaceholder.typicode.com/posts" method="post">
+      <fieldset>
+        <input type="radio" name="room" value="80's vibes">80's vibes
+        <input type="radio" name="room" value="Star wars">Star wars
+        <input type="radio" name="room" value="Wild west">Wild west
+        <input type="radio" name="room" value="Neon style">Neon style
+      </fieldset>
+
+      <fieldset>
+        <legend>Собери набор развлечений</legend>
+
+        <fieldset>
+          <legend>Приставка:</legend>
+          <input type="radio" name="console" value="PlayStation">PlayStation
+          <input type="radio" name="console" value="Sega Mega Drive">Sega Mega Drive
+          <input type="radio" name="console" value="X-Box One S">X-Box One S
+          <input type="radio" name="console" value="Dendy">Dendy
+        </fieldset>
+
+        <fieldset>
+          <legend>Настольные игры:</legend>
+          <input type="checkbox" name="game" value="jenga">jenga
+          <input type="checkbox" name="game" value="Monopoly">Monopoly
+          <input type="checkbox" name="game" value="Манчкин">Манчкин
+          <input type="checkbox" name="game" value="Alias">Alias
+        </fieldset>
+
+        <fieldset>
+          <legend>Дополнительно:</legend>
+          <input type="checkbox" name="dop" value="Караоке">Караоке
+          <input type="checkbox" name="dop" value="VR">VR
+        </fieldset>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Выбери дату и время:</legend>
+        <label>
+          Дата*
+          <input type="date" name="data" required>
+        </label>
+        <label>
+          Время*
+          <input type="time" name="time" required>
+        </label>
+        <br>
+        <label>
+          Количество человек
+          <input type="number" name="quantity" required>
+        </label>
+        <br>
+        <label>
+          Имя*
+          <input type="text" name="Name" required>
+        </label>
+        <br>
+        <label>
+          Фамилия*
+          <input type="text" name="Surname" required>
+        </label>
+        <br>
+        <label>
+          Номер телефона
+          <input type="tel" name="tel" pattern="8[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}">
+        </label>
+        <br>
+        <label>
+          <input type="checkbox" name="Age" required>
+          Я старше 18-ти лет.
+        </label>
+      </fieldset>
+
+      <button type="submit">Забронировать</button>
+      <label>
+        <input type="checkbox" name="approval" required>
+        Даю согласие на обработку персональных данных.
+      </label>
+
+    </form>
+
+    <h2 id="description">О нас</h2>
+    <p>
+      Для наших гостей мы создали
+      <i>концептуально новое пространство витруальной реальности</i>
+      в центральной части города
+    </p>
+
+    <p>Каждый день мы стараемся создавать для вас самую лучшую игровую платформу и радовать Вас топовыми игровыми разработками со всего мира</p>
+
+    <p id="reviews"><quote><b>GAME OVER</b> - это место незабываемых впечатлений</quote></p>
+    <cite>Аркадий Абакшин, создатель игровой территории GAME OVER</cite>
+
+    <h2 id="contacts">Контакты</h2>
+    <p>г.Москва ул.Аквамарина, 16</p>
+    <a href="tel:89509302893">8(950)930-28-93</a>
+    <br>
+    <a href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
+
+    <ul>
+      <li><a href="https://vk.com">Vkontakte</a></li>
+      <li><a href="https://web.telegram.org">Telegram</a></li>
+    </ul>
+  </body>
+</html>
